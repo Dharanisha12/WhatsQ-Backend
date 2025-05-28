@@ -1,0 +1,6 @@
+@WhatsQ_HostAddress = http://localhost:5001
+
+GET {{WhatsQ_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
