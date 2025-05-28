@@ -1,0 +1,81 @@
+[
+  {
+    "ContainingType": "PatientStatusController",
+    "Method": "GetTodayStats",
+    "RelativePath": "api/PatientStatus/getTodayStats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TokenManagementController",
+    "Method": "GetTokensByDate",
+    "RelativePath": "api/tokenmanagement/bydate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TokenManagementController",
+    "Method": "UpdateTokenStatus",
+    "RelativePath": "api/tokenmanagement/updatestatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TokenStatusUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhatsQ.Controllers.TokensController",
+    "Method": "GetTokenDetails",
+    "RelativePath": "api/Tokens/{tokenNumber}/{date}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "date",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WhatsQ.Controllers.TokensController",
+    "Method": "UpdateDescription",
+    "RelativePath": "api/Tokens/UpdateDescription",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WhatsQ.Controllers.TokensController\u002BTokenDescriptionUpdateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
